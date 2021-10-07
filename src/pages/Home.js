@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
 import "../assets/sty_home.css";
-import DemoCarousel from "../component/carousel";
-
+import img4 from "../assets/img_slider/slider3.jpg";
 import Navbar from "../component/navbar";
 function Home() {
   const [active, setActive] = useState("false");
@@ -16,7 +14,40 @@ function Home() {
     <div>
       <Navbar />
 
-      {/* <nav className="navbar">
+      <body>
+        <div className="mainPic">
+          <img src={img4} />
+        </div>
+        <div className="pointdirecWarp">
+          <div className="pointDir">
+            <Link to="Asia">
+              <div className="asia">Asia / East Asia</div>
+            </Link>
+            <Link to="/America">
+              <div className="america">
+                America / South America
+                <br />
+              </div>
+            </Link>
+            <Link to="/Europe">
+              <div className="europe">Europe</div>
+            </Link>
+          </div>
+        </div>
+      </body>
+      <footer>
+        <div className="made">
+          <h5>Made by Sujin Lee. 2021</h5>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default Home;
+
+{
+  /* <nav className="navbar">
         <i
           onClick={handleToggle}
           className={`fas fa-bars hamburger ${
@@ -49,13 +80,17 @@ function Home() {
         </div>
 
         <i className="fas fa-search"></i>
-      </nav> */}
-      <DemoCarousel />
-      {/* <div className="container">
-        <i className="fas fa-chevron-left leftBtn" id="prevBtn"></i>
-        <i className="fas fa-chevron-right rightBtn" id="nextBtn"></i> */}
+      </nav> */
+}
 
-      {/* <div className="slider-container">
+{
+  /* <div className="container">
+        <i className="fas fa-chevron-left leftBtn" id="prevBtn"></i>
+        <i className="fas fa-chevron-right rightBtn" id="nextBtn"></i> */
+}
+
+{
+  /* <div className="slider-container">
           <div className="slide">
             <img src="/image/img/slider3.jpg" id="lastClone" alt="" />
 
@@ -67,32 +102,8 @@ function Home() {
 
             <img src="/image/img/slider1.jpg" id="firstClone" alt="" />
           </div>
-        </div> */}
-      {/* </div> */}
-
-      <div className="pointdirecWarp">
-        <div className="pointDir">
-          <Link to="Asia">
-            <div className="asia">Asia / East Asia</div>
-          </Link>
-          <Link to="/America">
-            <div className="america">
-              America / South America
-              <br />
-            </div>
-          </Link>
-          <Link to="/Europe">
-            <div className="europe">Europe</div>
-          </Link>
-        </div>
-      </div>
-      <footer>
-        <div className="made">
-          <h5>Made by Sujin Lee. 2021</h5>
-        </div>
-      </footer>
-    </div>
-  );
+        </div> */
 }
-
-export default Home;
+{
+  /* </div> */
+}

@@ -7,6 +7,7 @@ const db = app.firestore();
 const Gallery = () => {
   const [fileUrl, setFileUrl] = useState(null);
   const [users, setUsers] = useState([]);
+
   const onFileChange = async (e) => {
     const file = e.target.files[0];
     const storageRef = app.storage().ref();
