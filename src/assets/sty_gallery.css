@@ -1,0 +1,29 @@
+.sectionTitle {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #6d9886;
+}
+
+.icon {
+  font-size: 2rem;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li img {
+  width: 400px;
+  height: 450px;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+p {
+  font-size: 1.5rem;
+}

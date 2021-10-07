@@ -1,0 +1,25 @@
+.card {
+  margin: 20px;
+  padding: 3px;
+  width: 80%;
+  box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardImg {
+  display: relative;
+}
+img {
+  width: 100%;
+  height: 300px;
+}
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
