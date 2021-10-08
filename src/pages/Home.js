@@ -21,11 +21,11 @@ function Home() {
         <div className="pointdirecWarp">
           <div className="pointDir">
             <Link to="Asia">
-              <div className="asia">Asia / East Asia</div>
+              <div className="asia">Asia</div>
             </Link>
             <Link to="/America">
               <div className="america">
-                America / South America
+                America South America
                 <br />
               </div>
             </Link>

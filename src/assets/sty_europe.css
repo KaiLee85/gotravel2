@@ -9,7 +9,7 @@ body {
 }
 
 .backImg {
-  background-image: url("banner.jpg");
+  background-image: url("/src/assets/banner.jpg");
 
   width: 100%;
   height: 500px;
